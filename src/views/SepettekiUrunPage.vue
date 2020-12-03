@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="sepettekiUrun">
+    <SepettekiUrun/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import SepettekiUrun from '../components/SepettekiUrun.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    SepettekiUrun
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

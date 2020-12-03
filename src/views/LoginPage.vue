@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="login">
+    <Login/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import Login from '../components/Login.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    Login
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

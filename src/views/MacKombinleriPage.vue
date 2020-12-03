@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="macKombinleri">
+    <MacKombinleri/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import MacKombinleri from '../components/MacKombinleri.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    MacKombinleri
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

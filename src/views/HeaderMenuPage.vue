@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="headerMenı">
+    <HeaderMenu/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import HeaderMenu from '../components/HeaderMenu.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    HeaderMenu
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

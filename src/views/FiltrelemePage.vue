@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="filtreleme">
+    <Filtreleme/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import Filtreleme from '../components/Filtreleme.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    Filtreleme
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

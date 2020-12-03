@@ -1,22 +1,25 @@
 <template>
-  <div>
-    <carousel></carousel>
+  <div v-title="title" class="urunDetay">
+    <UrunDetayPage/>
 >
   </div>
 </template>
 
 <script>
-import Carousel from './components/Carousel.vue'
+import UrunDetayPage from '../components/UrunDetayPage.vue'
 
 export default {
   name:"app",
   components:{
-    Carousel
+    UrunDetayPage
+  }, 
+  data (){
+      title:"Fenerium"
   }
 }
 </script>
     
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
